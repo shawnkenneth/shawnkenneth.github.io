@@ -2119,7 +2119,7 @@ nav a:hover {
 
 @media (max-width: 767px) {
   .banner-content {
-    margin-top: 100px;
+    margin-top: -100px;
   }
 }
 
@@ -2665,4 +2665,29 @@ nav a:hover {
     .footer-social2-lg {
         text-align: left;
     }
+}
+
+.g-fullheight--xs {
+  height: 100vh;
+}
+
+/* Small screen / phone */
+@media (min-width: 34em) {
+  .g-fullheight--sm {
+    height: 100vh;
+  }
+}
+
+/* Medium screen / tablet */
+@media (min-width: 48em) {
+  .g-fullheight--md {
+    height: 100vh;
+  }
+}
+
+/* Extra large screen / wide desktop */
+@media (min-width: 62em) {
+  .g-fullheight--lg {
+    height: 100vh;
+  }
 }
