@@ -866,6 +866,21 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.buttonsmoother {
+    border-radius: 50px;
+    background: linear-gradient(to right, #961cff , #dc1cf5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+
+}
+
 .buttonold {
   border-radius: 4px;
   background: linear-gradient(to right,  #691cff , #f51cb0);    
@@ -2043,10 +2058,18 @@ nav a:hover {
 }
 
 .p1-gradient-bg, .primary-btn:after, .is-sticky .default-header, .single-img, .member-area .overlay-bg, .contact-area .primary-btn, .footer-social, .footer-social2  a:hover {
-  background-image: -moz-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
+  background-image: -moz-linear-gradient(0deg, #961cff 0%, #dc1cf5 100%);
+  background-image: -webkit-linear-gradient(0deg, #961cff 0%, #dc1cf5 100%);
+  background-image: -ms-linear-gradient(0deg, #961cff 0%, #dc1cf5 100%);
+}
+
+/*
+.p1-gradient-bg, .primary-btn:after, .is-sticky .default-header, .single-img, .member-area .overlay-bg, .contact-area .primary-btn, .footer-social, .footer-social2  a:hover {
+  background-image: -moz-linear-gradient(0deg, #961cff 0%, #dc1cf5 100%);
   background-image: -webkit-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
   background-image: -ms-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
 }
+*/
 
 .p1-gradient-color, .about-details h2 {
   background: -moz-linear-gradient(0deg, #691cff 0%, #f51cb0 100%);
@@ -2219,6 +2242,14 @@ nav a:hover {
   backface-visibility: hidden;
 }
 
+.regularimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
 .middle {
   color: #fff;
   text-align: center;
@@ -2322,9 +2353,7 @@ nav a:hover {
 
 .member-area {
   text-align: center;
-  color: #fff;
-  background: url(../img/member-bg.jpg) no-repeat center center/cover;
-}
+  color: #fff;}
 
 .member-area .overlay-bg {
   opacity: .8;
@@ -2441,6 +2470,11 @@ nav a:hover {
 
 .about-area {
   background: url(../img/about-bg.jpg) no-repeat left;
+  background-size: cover;
+}
+
+.about-areawhite {
+
   background-size: cover;
 }
 
@@ -2657,6 +2691,15 @@ nav a:hover {
 @media (min-width: 992px) {
     .footer-social2-md {
         text-align: left;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+
+@media (min-width: 992px) {
+    .footer-social5-md {
+        text-align: centre;
     }
 }
 
